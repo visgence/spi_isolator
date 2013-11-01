@@ -1,0 +1,98 @@
+PCBNEW-LibModule-V1  10/29/2013 10:44:22 PM
+# encoding utf-8
+Units mm
+$INDEX
+1pin
+TRAN
+$EndINDEX
+$MODULE 1pin
+Po 0 0 0 15 524894F4 00000000 ~~
+Li 1pin
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
+Sc 0
+AR 1pin
+Op 0 0 0
+T0 0 -3.048 1.016 1.016 0 0.254 N I 21 N "h1"
+T1 0 2.794 1.016 1.016 0 0.254 N I 21 N "pin"
+DC 0 0 3.175 0.2286 0.381 21
+$PAD
+Sh "1" C 6 6 0 0 0
+Dr 3.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE 1pin
+$MODULE TRAN
+Po 0 0 0 15 52707BBA 00000000 ~~
+Li TRAN
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -5 1 1 0 0.15 N V 21 N "TRAN"
+T1 0 5.5 1 1 0 0.15 N V 21 N "VAL**"
+DC -3.5 -3 -3 -3 0.15 21
+DC 0 0 0 -3.5 0.15 21
+DS -4.5 -4 -4.5 4 0.15 21
+DS -4.5 4 4.5 4 0.15 21
+DS 4.5 4 4.5 -4 0.15 21
+DS 4.5 -4 -4.5 -4 0.15 21
+$PAD
+Sh "1" R 1.7 1.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -5.5 -3
+$EndPAD
+$PAD
+Sh "2" R 1.7 1.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -5.5 -1
+$EndPAD
+$PAD
+Sh "3" R 1.7 1.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -5.5 1
+$EndPAD
+$PAD
+Sh "4" R 1.7 1.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -5.5 3
+$EndPAD
+$PAD
+Sh "5" R 1.7 1.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.5 3
+$EndPAD
+$PAD
+Sh "6" R 1.7 1.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.5 1
+$EndPAD
+$PAD
+Sh "7" R 1.7 1.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.5 -1
+$EndPAD
+$PAD
+Sh "8" R 1.7 1.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.5 -3
+$EndPAD
+$EndMODULE TRAN
+$EndLIBRARY

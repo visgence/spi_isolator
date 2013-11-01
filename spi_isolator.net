@@ -1,0 +1,247 @@
+# EESchema Netlist Version 1.1 created  10/29/2013 10:56:39 PM
+(
+ ( /52703B8A $noname  T1 TRAN {Lib=TRAN}
+  (    1 N-000015 )
+  (    2 VDD )
+  (    3 VDD )
+  (    4 N-000016 )
+  (    5 N-000020 )
+  (    6 GND )
+  (    7 GND )
+  (    8 N-000019 )
+ )
+ ( /52703613 $noname  U1 ADUM3471 {Lib=ADUM3471}
+  (    1 N-000015 )
+  (    2 GNDA )
+  (    3 ? )
+  (    4 N-000016 )
+  (    5 InA )
+  (    6 InB )
+  (    7 InC )
+  (    8 OutD )
+  (    9 VDD )
+  (   10 GNDA )
+  (   11 GND )
+  (   12 N-000011 )
+  (   13 InD )
+  (   14 OutC )
+  (   15 OutB )
+  (   16 OutA )
+  (   17 N-000018 )
+  (   18 +5V )
+  (   19 GND )
+  (   20 N-000021 )
+ )
+ ( /52703693 $noname  C1 CP1 {Lib=CP1}
+  (    1 VDD )
+  (    2 GNDA )
+ )
+ ( /52703704 $noname  D1 DIODESCH {Lib=DIODESCH}
+  (    1 N-000019 )
+  (    2 N-000021 )
+ )
+ ( /52703711 $noname  D2 DIODESCH {Lib=DIODESCH}
+  (    1 N-000020 )
+  (    2 N-000021 )
+ )
+ ( /52703762 $noname  L1 47uH {Lib=INDUCTOR_SMALL}
+  (    1 N-000021 )
+  (    2 Viso )
+ )
+ ( /527037BA $noname  C3 CP1 {Lib=CP1}
+  (    1 Viso )
+  (    2 GND )
+ )
+ ( /52703825 $noname  R2 R {Lib=R}
+  (    1 Viso )
+  (    2 N-000018 )
+ )
+ ( /5270384C $noname  R3 R {Lib=R}
+  (    1 GND )
+  (    2 N-000018 )
+ )
+ ( /52703917 $noname  C2 CP1 {Lib=CP1}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /52703A11 $noname  R1 100k {Lib=R}
+  (    1 GND )
+  (    2 N-000011 )
+ )
+ ( /5270768F $noname  P1 CONN_2 {Lib=CONN_2}
+  (    1 VDD )
+  (    2 GNDA )
+ )
+ ( /5270773E $noname  P2 CONN_4 {Lib=CONN_4}
+  (    1 InA )
+  (    2 InB )
+  (    3 InC )
+  (    4 OutD )
+ )
+ ( /52707871 $noname  P3 CONN_4 {Lib=CONN_4}
+  (    1 OutA )
+  (    2 OutB )
+  (    3 OutC )
+  (    4 InD )
+ )
+ ( /52707883 $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 +5V )
+  (    2 GND )
+  (    3 Viso )
+ )
+ ( /52708313 $noname  D3 LED {Lib=LED}
+  (    1 VDD )
+  (    2 N-000012 )
+ )
+ ( /52708322 $noname  R4 2.2k {Lib=R}
+  (    1 GNDA )
+  (    2 N-000012 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ CP*
+ SM*
+$endlist
+$component D1
+ D?
+ S*
+$endlist
+$component D2
+ D?
+ S*
+$endlist
+$component C3
+ CP*
+ SM*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C2
+ CP*
+ SM*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "InD" "InD"
+ U1 13
+ P3 4
+Net 2 "InB" "InB"
+ P2 2
+ U1 6
+Net 3 "InC" "InC"
+ P2 3
+ U1 7
+Net 4 "OutD" "OutD"
+ P2 4
+ U1 8
+Net 5 "OutA" "OutA"
+ P3 1
+ U1 16
+Net 6 "OutB" "OutB"
+ P3 2
+ U1 15
+Net 7 "OutC" "OutC"
+ U1 14
+ P3 3
+Net 8 "GNDA" "GNDA"
+ U1 2
+ R4 1
+ U1 10
+ P1 2
+ C1 2
+Net 9 "InA" "InA"
+ P2 1
+ U1 5
+Net 10 "GND" "GND"
+ C3 2
+ U1 19
+ C2 2
+ T1 6
+ R3 1
+ U1 11
+ T1 7
+ K1 2
+ R1 1
+Net 11 "" ""
+ R1 2
+ U1 12
+Net 12 "" ""
+ D3 2
+ R4 2
+Net 13 "VDD" "VDD"
+ U1 9
+ D3 1
+ P1 1
+ C1 1
+ T1 2
+ T1 3
+Net 14 "+5V" "+5V"
+ K1 1
+ C2 1
+ U1 18
+Net 15 "" ""
+ U1 1
+ T1 1
+Net 16 "" ""
+ T1 4
+ U1 4
+Net 18 "" ""
+ U1 17
+ R3 2
+ R2 2
+Net 19 "" ""
+ T1 8
+ D1 1
+Net 20 "" ""
+ D2 1
+ T1 5
+Net 21 "" ""
+ L1 1
+ D1 2
+ D2 2
+ U1 20
+Net 22 "Viso" "Viso"
+ K1 3
+ R2 1
+ L1 2
+ C3 1
+}
+#End
